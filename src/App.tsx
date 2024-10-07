@@ -1,11 +1,17 @@
-import Counter from "./components/Counter"
+import { Container, Typography } from '@mui/material'
+import AddHabitForm from './components/add-habit-form'
 
 function App() {
 
   return (
     <>
-      <div>Hello </div>
-      <Counter/>
+      <Container maxWidth="md">
+      <Typography component="h1" align='center' variant='h2'>
+        Habit Tracker
+      </Typography>
+      <AddHabitForm/>
+     </Container>
+      
     </>
   )
 }
